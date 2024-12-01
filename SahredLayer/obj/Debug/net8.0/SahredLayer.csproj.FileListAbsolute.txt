@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\bin\Debug\net8.0\SahredLayer.deps.json
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\bin\Debug\net8.0\SahredLayer.dll
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\bin\Debug\net8.0\SahredLayer.pdb
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.dll
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\refint\SahredLayer.dll
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\SahredLayer.pdb
+C:\Users\LENOVO\source\repos\GlobalMart\SahredLayer\obj\Debug\net8.0\ref\SahredLayer.dll
