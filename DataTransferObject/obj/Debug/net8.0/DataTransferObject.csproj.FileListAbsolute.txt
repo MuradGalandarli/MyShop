@@ -12,6 +12,7 @@ C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\Data
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTransferObject.AssemblyInfoInputs.cache
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTransferObject.AssemblyInfo.cs
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTransferObject.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTransferObject.sourcelink.json
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTran.832C1324.Up2Date
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\DataTransferObject.dll
 C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\obj\Debug\net8.0\refint\DataTransferObject.dll

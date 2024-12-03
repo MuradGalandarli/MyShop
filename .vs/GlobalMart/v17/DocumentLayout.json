@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBE6F009-5929-4C8B-B3C0-E7D190E52951}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\businesslayer\\manager\\trendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBE6F009-5929-4C8B-B3C0-E7D190E52951}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\manager\\trendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|solutionrelative:apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|solutionrelative:apilayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|solutionrelative:apilayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE6F009-5929-4C8B-B3C0-E7D190E52951}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\businesslayer\\manager\\trendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE6F009-5929-4C8B-B3C0-E7D190E52951}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\manager\\trendmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\controllers\\admin\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -225,14 +233,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{11FD5062-4750-46C9-A015-7A1E58E7149A}|EntityLayer\\EntityLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\entitylayer\\entity\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11FD5062-4750-46C9-A015-7A1E58E7149A}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\entity\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|solutionrelative:apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\apilayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03AA53B4-D481-41E6-AEAC-1640B59C1316}|ApiLayer\\ApiLayer.csproj|solutionrelative:apilayer\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBE6F009-5929-4C8B-B3C0-E7D190E52951}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\lenovo\\source\\repos\\globalmart\\businesslayer\\manager\\contactmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -502,7 +502,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -514,72 +514,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UIProductController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIProductController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIProductController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIProductController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIProductController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:05:40.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrendController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\TrendController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\TrendController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\TrendController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\TrendController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:49:09.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\UserController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\UserController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\UserController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\UserController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:21:01.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\appsettings.json",
               "RelativeDocumentMoniker": "ApiLayer\\appsettings.json",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\appsettings.json",
               "RelativeToolTip": "ApiLayer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-28T09:04:58.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TrendManager.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\TrendManager.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Manager\\TrendManager.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\TrendManager.cs",
               "RelativeToolTip": "BusinessLayer\\Manager\\TrendManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAhwB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T08:52:49.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\ProductController.cs",
               "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\ProductController.cs",
@@ -587,675 +548,24 @@
               "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\ProductController.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAYwDoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:06:16.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:06:16.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UIOrderController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIOrderController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIOrderController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIOrderController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIOrderController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T13:22:46.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\OrderController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\OrderController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\OrderController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\OrderController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:42:21.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FavoriteProductController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAtwA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:34:31.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CommentController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\CommentController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CommentController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\CommentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:53:27.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\ContactController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\ContactController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\ContactController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\ContactController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:16:36.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FeedbackScoreController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T09:29:50.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UIFeedbackScoreController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T12:56:15.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UICategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UICategoryController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UICategoryController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UICategoryController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UICategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T20:17:41.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UIAboutController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIAboutController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIAboutController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIAboutController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIAboutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:26:53.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UIContactController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIContactController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIContactController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIContactController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIContactController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:28:17.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CategoryController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CategoryController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\CategoryController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwAsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:35:44.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AboutController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\AboutController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\AboutController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\AboutController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\AboutController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:11:02.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Auth\\AuthController.cs",
-              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Auth\\AuthController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Auth\\AuthController.cs",
-              "RelativeToolTip": "ApiLayer\\Controllers\\Auth\\AuthController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwDIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:42:42.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthManager.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\AuthManager.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Manager\\AuthManager.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\AuthManager.cs",
-              "RelativeToolTip": "BusinessLayer\\Manager\\AuthManager.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAArwCMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:02:11.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\UserDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\UserDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\UserDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\UserDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:29:44.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ProductDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\ProductDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ProductDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\ProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:20:54.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OrderDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\OrderDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\OrderDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\OrderDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\OrderDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:12:40.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FeedbackScoreDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T19:07:29.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FavoriteProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:49:27.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ContactDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ContactDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\ContactDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ContactDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\ContactDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:19:28.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CommentDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\CommentDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CommentDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\CommentDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:37:49.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CategoryDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CategoryDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\CategoryDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CategoryDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\CategoryDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:54:56.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AboutDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\AboutDto.cs",
-              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\AboutDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\AboutDto.cs",
-              "RelativeToolTip": "DataTransferObject\\DtoEntity\\AboutDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:17:41.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "EFUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFUserRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFUserRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFUserRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFUserRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAIoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:11:48.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EFTrendRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFTrendRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFTrendRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFTrendRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFTrendRepository.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:11:09.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "EFProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFProductRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFProductRepository.cs",
-              "ViewState": "AgIAAGgBAAAAAAAAAAAIwH0BAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:27:46.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "EFOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFOrderRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFOrderRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFOrderRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFOrderRepository.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAAcwCQBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:32:11.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "EFFeedbackScoreReository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAowKAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T12:43:04.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "EFFavoriteProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAYwIAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:09:59.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "EFContactRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFContactRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFContactRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFContactRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFContactRepository.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowF0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:54:18.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "EFCommentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCommentRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFCommentRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCommentRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFCommentRepository.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAjwIUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:43:13.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "EFCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCategoryRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCategoryRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFCategoryRepository.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAA/wLAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:15:04.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EFAboutRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFAboutRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFAboutRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFAboutRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\Concret\\EFAboutRepository.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAkwMIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T06:48:00.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\UserValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\UserValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\UserValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\UserValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:19:36.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\User.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\User.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T13:49:22.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ProductValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ProductValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\ProductValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ProductValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\ProductValidator.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:14:33.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Product.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Product.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Product.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\Product.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T13:52:18.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "OrderValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\OrderValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\OrderValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\OrderValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\OrderValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:04:44.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Order.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Order.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Order.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\Order.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T13:36:02.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "FeedbackScoreValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:52:55.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FeedbackScore.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FeedbackScore.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\FeedbackScore.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FeedbackScore.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\FeedbackScore.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:45:59.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "FavoriteProduct.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FavoriteProduct.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\FavoriteProduct.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FavoriteProduct.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\FavoriteProduct.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAASwA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T08:42:31.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "FavoriteProductValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FavoriteProductValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\FavoriteProductValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FavoriteProductValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\FavoriteProductValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:47:19.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ContactValidation.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ContactValidation.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\ContactValidation.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ContactValidation.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\ContactValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T06:21:35.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "CommentValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CommentValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\CommentValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CommentValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\CommentValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:40:48.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AboutValidation.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\AboutValidation.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\AboutValidation.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\AboutValidation.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\AboutValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T10:56:45.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Comment.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Comment.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Comment.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\Comment.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T14:02:05.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "CategoryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CategoryValidator.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\CategoryValidator.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CategoryValidator.cs",
-              "RelativeToolTip": "BusinessLayer\\Validation\\CategoryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:23:07.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Category.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Category.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Category.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T13:58:10.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "About.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\About.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Entity\\About.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\About.cs",
-              "RelativeToolTip": "EntityLayer\\Entity\\About.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAawBIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T06:39:35.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Program.cs",
               "RelativeDocumentMoniker": "ApiLayer\\Program.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Program.cs",
               "RelativeToolTip": "ApiLayer\\Program.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAIAwwGEAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAIAwwMsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T16:15:48.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 1,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "ApiLayer\\WeatherForecast.cs",
@@ -1268,6 +578,654 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\UserController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\UserController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\UserController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\UserController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:21:01.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrendController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\TrendController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\TrendController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\TrendController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\TrendController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:49:09.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UIOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIOrderController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIOrderController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIOrderController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIOrderController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T13:22:46.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UIProductController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIProductController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIProductController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIProductController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIProductController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:05:40.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\OrderController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\OrderController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\OrderController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\OrderController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T15:42:21.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FavoriteProductController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\FavoriteProductController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAtwA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:34:31.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CommentController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\CommentController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CommentController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\CommentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:53:27.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\ContactController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\ContactController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\ContactController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T09:16:36.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FeedbackScoreController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\FeedbackScoreController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T09:29:50.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UIFeedbackScoreController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIFeedbackScoreController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:56:15.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UICategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UICategoryController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UICategoryController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UICategoryController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UICategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T20:17:41.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UIAboutController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIAboutController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIAboutController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIAboutController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIAboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T08:26:53.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UIContactController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIContactController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\UI\\UIContactController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\UI\\UIContactController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\UI\\UIContactController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T09:28:17.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CategoryController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\CategoryController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\CategoryController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:35:44.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\AboutController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Admin\\AboutController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Admin\\AboutController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Admin\\AboutController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T08:11:02.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "ApiLayer\\Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\ApiLayer\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "ApiLayer\\Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwDIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:42:42.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\AuthManager.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Manager\\AuthManager.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\AuthManager.cs",
+              "RelativeToolTip": "BusinessLayer\\Manager\\AuthManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwCMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:02:11.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\UserDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\UserDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\UserDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\UserDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:29:44.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ProductDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ProductDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:20:54.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\OrderDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\OrderDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\OrderDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:12:40.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FeedbackScoreDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\FeedbackScoreDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T19:07:29.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FavoriteProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\FavoriteProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T18:49:27.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ContactDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ContactDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\ContactDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\ContactDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\ContactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T09:19:28.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CommentDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CommentDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\CommentDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CommentDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\CommentDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:37:49.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\CategoryDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:54:56.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AboutDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\AboutDto.cs",
+              "RelativeDocumentMoniker": "DataTransferObject\\DtoEntity\\AboutDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataTransferObject\\DtoEntity\\AboutDto.cs",
+              "RelativeToolTip": "DataTransferObject\\DtoEntity\\AboutDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T08:17:41.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EFUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFUserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFUserRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFUserRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFUserRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAIoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:11:48.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EFTrendRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFTrendRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFTrendRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFTrendRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFTrendRepository.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:11:09.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EFProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFProductRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFProductRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFProductRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFProductRepository.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAIwH0BAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:27:46.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EFOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFOrderRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFOrderRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFOrderRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFOrderRepository.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAcwCQBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T15:32:11.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EFFeedbackScoreReository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFFeedbackScoreReository.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAowKAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:43:04.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EFFavoriteProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFFavoriteProductRepository.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAYwIAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:09:59.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EFContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFContactRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFContactRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFContactRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFContactRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowF0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T08:54:18.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EFCommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCommentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFCommentRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCommentRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFCommentRepository.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAjwIUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:43:13.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EFCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCategoryRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFCategoryRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFCategoryRepository.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAA/wLAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T10:15:04.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EFAboutRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFAboutRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Concret\\EFAboutRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\DataAccessLayer\\Concret\\EFAboutRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Concret\\EFAboutRepository.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAkwMIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T06:48:00.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\UserValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\UserValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\UserValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\UserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T14:19:36.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\User.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:49:22.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProductValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ProductValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\ProductValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ProductValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\ProductValidator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T14:14:33.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Product.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Product.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Product.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\Product.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:52:18.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\OrderValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\OrderValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\OrderValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\OrderValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T14:04:44.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Order.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Order.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Order.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\Order.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T13:36:02.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FeedbackScoreValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\FeedbackScoreValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T13:52:55.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FeedbackScore.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FeedbackScore.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\FeedbackScore.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FeedbackScore.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\FeedbackScore.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T09:45:59.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "FavoriteProduct.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FavoriteProduct.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\FavoriteProduct.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\FavoriteProduct.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\FavoriteProduct.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAASwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T08:42:31.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "FavoriteProductValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FavoriteProductValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\FavoriteProductValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\FavoriteProductValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\FavoriteProductValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T13:47:19.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ContactValidation.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ContactValidation.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\ContactValidation.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\ContactValidation.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\ContactValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T06:21:35.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CommentValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CommentValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\CommentValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CommentValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\CommentValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T13:40:48.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AboutValidation.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\AboutValidation.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\AboutValidation.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\AboutValidation.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\AboutValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:56:45.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Comment.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Comment.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Comment.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\Comment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:02:05.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CategoryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CategoryValidator.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Validation\\CategoryValidator.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Validation\\CategoryValidator.cs",
+              "RelativeToolTip": "BusinessLayer\\Validation\\CategoryValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T13:23:07.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Category.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\Category.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\Category.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:58:10.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "About.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\About.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Entity\\About.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\EntityLayer\\Entity\\About.cs",
+              "RelativeToolTip": "EntityLayer\\Entity\\About.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAawBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T06:39:35.902Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 58,
               "Title": "ContactManager.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\GlobalMart\\BusinessLayer\\Manager\\ContactManager.cs",
@@ -1276,8 +1234,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\ContactManager.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAIA9wCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:11:02.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T09:11:02.408Z"
             },
             {
               "$type": "Document",
@@ -1289,8 +1246,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241111163436_init.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:34:36.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T16:34:36.754Z"
             },
             {
               "$type": "Document",
@@ -1302,8 +1258,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\EmailManager.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAApwDEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T10:18:36.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T10:18:36.462Z"
             },
             {
               "$type": "Document",
@@ -1315,8 +1270,7 @@
               "RelativeToolTip": "EntityLayer\\Entity\\Trend.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T07:52:52.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T07:52:52.426Z"
             },
             {
               "$type": "Document",
@@ -1328,8 +1282,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\ITrendService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:41:24.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T08:41:24.707Z"
             },
             {
               "$type": "Document",
@@ -1341,8 +1294,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\ITrend.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:07:46.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T08:07:46.401Z"
             },
             {
               "$type": "Document",
@@ -1354,8 +1306,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241129141203_CreateContact.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T14:12:03.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T14:12:03.303Z"
             },
             {
               "$type": "Document",
@@ -1367,8 +1318,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IContactService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:10:19.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T09:10:19.289Z"
             },
             {
               "$type": "Document",
@@ -1380,8 +1330,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IEmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T10:12:12.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T10:12:12.116Z"
             },
             {
               "$type": "Document",
@@ -1393,8 +1342,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IGeneric.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:08:06.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T10:08:06.97Z"
             },
             {
               "$type": "Document",
@@ -1406,8 +1354,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\ICategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:13:45.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T10:13:45.187Z"
             },
             {
               "$type": "Document",
@@ -1419,8 +1366,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IComment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:39:39.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T12:39:39.728Z"
             },
             {
               "$type": "Document",
@@ -1432,8 +1378,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\AboutManager.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAswDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:53:30.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:53:30.182Z"
             },
             {
               "$type": "Document",
@@ -1445,8 +1390,7 @@
               "RelativeToolTip": "DataTransferObject\\DtoProfile\\MapperProfile.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:55:59.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:55:59.458Z"
             },
             {
               "$type": "Document",
@@ -1458,8 +1402,7 @@
               "RelativeToolTip": "DataAccessLayer\\ApplicationContext.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAxwBsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:08:45.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T16:08:45.705Z"
             },
             {
               "$type": "Document",
@@ -1471,8 +1414,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IContact.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:52:58.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T08:52:58.839Z"
             },
             {
               "$type": "Document",
@@ -1484,8 +1426,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IAbout.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T06:45:42.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T06:45:42.267Z"
             },
             {
               "$type": "Document",
@@ -1497,8 +1438,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IAboutService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:53:08.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:53:08.818Z"
             },
             {
               "$type": "Document",
@@ -1510,8 +1450,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241129073119_CreateAbout.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:31:19.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:31:19.762Z"
             },
             {
               "$type": "Document",
@@ -1523,8 +1462,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IGenericService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAtwA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:27:57.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T11:27:57.082Z"
             },
             {
               "$type": "Document",
@@ -1536,8 +1474,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\CategoryManager.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAawCMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:31:58.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T11:31:58.538Z"
             },
             {
               "$type": "Document",
@@ -1549,8 +1486,7 @@
               "RelativeToolTip": "ApiLayer\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-28T11:51:51.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T11:51:51.963Z"
             },
             {
               "$type": "Document",
@@ -1562,8 +1498,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\OrderManager.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:37:09.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T15:37:09.072Z"
             },
             {
               "$type": "Document",
@@ -1575,8 +1510,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\UserManager.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:16:18.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:16:18.774Z"
             },
             {
               "$type": "Document",
@@ -1588,8 +1522,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\ProductManager.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAWwEYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:41:28.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T14:41:28.912Z"
             },
             {
               "$type": "Document",
@@ -1601,8 +1534,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\FeedbackScoreManager.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAlwDMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T12:50:28.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T12:50:28.516Z"
             },
             {
               "$type": "Document",
@@ -1614,8 +1546,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\FavoriteProductManager.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAA5wDUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:15:52.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T13:15:52.846Z"
             },
             {
               "$type": "Document",
@@ -1627,8 +1558,7 @@
               "RelativeToolTip": "BusinessLayer\\Manager\\CommentManager.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAgwC8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:48:07.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T12:48:07.06Z"
             },
             {
               "$type": "Document",
@@ -1640,8 +1570,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:15:27.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:15:27.924Z"
             },
             {
               "$type": "Document",
@@ -1653,8 +1582,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:39:34.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T14:39:34.381Z"
             },
             {
               "$type": "Document",
@@ -1666,8 +1594,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IOrderService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:36:10.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T15:36:10.177Z"
             },
             {
               "$type": "Document",
@@ -1679,8 +1606,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IFeedbackScoreService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T12:47:17.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T12:47:17.025Z"
             },
             {
               "$type": "Document",
@@ -1692,8 +1618,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IFavoriteProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:14:41.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T13:14:41.946Z"
             },
             {
               "$type": "Document",
@@ -1705,8 +1630,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\ICommentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T12:47:27.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T12:47:27.331Z"
             },
             {
               "$type": "Document",
@@ -1718,8 +1642,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\ICategoryService.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAIBJwAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:29:30.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T11:29:30.665Z"
             },
             {
               "$type": "Document",
@@ -1731,8 +1654,7 @@
               "RelativeToolTip": "BusinessLayer\\Service\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:44:01.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:44:01.281Z"
             },
             {
               "$type": "Document",
@@ -1744,8 +1666,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IUserApp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:10:32.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:10:32.506Z"
             },
             {
               "$type": "Document",
@@ -1757,8 +1678,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\ITrendPrtial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:18:42.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T09:18:42.942Z"
             },
             {
               "$type": "Document",
@@ -1770,8 +1690,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IProduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:26:41.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T14:26:41.129Z"
             },
             {
               "$type": "Document",
@@ -1783,8 +1702,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IOrder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:31:27.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T15:31:27.113Z"
             },
             {
               "$type": "Document",
@@ -1796,8 +1714,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IFeedbackScore.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T11:01:15.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T11:01:15.461Z"
             },
             {
               "$type": "Document",
@@ -1809,8 +1726,7 @@
               "RelativeToolTip": "DataAccessLayer\\Abstract\\IFavoriteProduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:05:48.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T13:05:48.376Z"
             },
             {
               "$type": "Document",
@@ -1822,8 +1738,7 @@
               "RelativeToolTip": "EntityLayer\\Entity\\ProductImage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T11:18:34.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T11:18:34.343Z"
             },
             {
               "$type": "Document",
@@ -1835,8 +1750,7 @@
               "RelativeToolTip": "SahredLayer\\SearchProductModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:20:55.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T13:20:55.974Z"
             },
             {
               "$type": "Document",
@@ -1848,8 +1762,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241127081849_AddTrendStatus.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:18:49.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T08:18:49.182Z"
             },
             {
               "$type": "Document",
@@ -1861,8 +1774,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241127075959_CreateTrendTable.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAQwBcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T07:59:59.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T07:59:59.532Z"
             },
             {
               "$type": "Document",
@@ -1874,8 +1786,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241127071516_TrendPraduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T07:15:16.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T07:15:16.729Z"
             },
             {
               "$type": "Document",
@@ -1887,8 +1798,7 @@
               "RelativeToolTip": "EntityLayer\\Enums\\OrderEnum.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T14:31:10.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T14:31:10.129Z"
             },
             {
               "$type": "Document",
@@ -1900,8 +1810,7 @@
               "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-11T16:30:06.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T16:30:06.876Z"
             },
             {
               "$type": "Document",
@@ -1913,8 +1822,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241124084640_CreateColumnIfBuying.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T08:46:40.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T08:46:40.29Z"
             },
             {
               "$type": "Document",
@@ -1926,8 +1834,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241122135413_createDateTime.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T13:54:13.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T13:54:13.865Z"
             },
             {
               "$type": "Document",
@@ -1939,8 +1846,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241122115211_deleteUserIsActive.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:52:11.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T11:52:11.829Z"
             },
             {
               "$type": "Document",
@@ -1952,8 +1858,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241121121200_relationCommentUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T12:12:00.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T12:12:00.288Z"
             },
             {
               "$type": "Document",
@@ -1965,8 +1870,7 @@
               "RelativeToolTip": "SahredLayer\\RegistrationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:44:41.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:44:41.083Z"
             },
             {
               "$type": "Document",
@@ -1978,8 +1882,7 @@
               "RelativeToolTip": "SahredLayer\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:44:59.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:44:59.817Z"
             },
             {
               "$type": "Document",
@@ -1991,8 +1894,7 @@
               "RelativeToolTip": "SahredLayer\\JwtConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:16:04.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T09:16:04.501Z"
             },
             {
               "$type": "Document",
@@ -2004,8 +1906,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241115095621_relationUserFeedbackScore.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:56:21.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T09:56:21.771Z"
             },
             {
               "$type": "Document",
@@ -2017,8 +1918,7 @@
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20241113102947_DbScheme.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAQwBMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T10:29:48.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T10:29:48.008Z"
             },
             {
               "$type": "Document",
@@ -2041,8 +1941,7 @@
               "RelativeToolTip": "SahredLayer\\MailData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T10:14:14.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T10:14:14.432Z"
             },
             {
               "$type": "Document",
@@ -2054,8 +1953,7 @@
               "RelativeToolTip": "SahredLayer\\MailSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T10:03:15.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T10:03:15.113Z"
             },
             {
               "$type": "Document",
@@ -2067,8 +1965,7 @@
               "RelativeToolTip": "SahredLayer\\Resetmodel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T09:50:50.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T09:50:50.45Z"
             },
             {
               "$type": "Document",
@@ -2080,8 +1977,7 @@
               "RelativeToolTip": "SahredLayer\\UserRoles.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAqwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T08:03:49.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T08:03:49.417Z"
             },
             {
               "$type": "Document",
@@ -2104,8 +2000,7 @@
               "RelativeToolTip": "BusinessLayer\\BusinessLayer.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-11T15:43:53.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T15:43:53.018Z"
             }
           ]
         }

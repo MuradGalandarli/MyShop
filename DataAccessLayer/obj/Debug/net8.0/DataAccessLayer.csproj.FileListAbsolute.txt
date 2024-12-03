@@ -10,6 +10,7 @@ C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAcc
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
 C:\Users\LENOVO\source\repos\GlobalMart\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll

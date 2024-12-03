@@ -27,12 +27,22 @@ namespace ApiLayer
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            /* builder.Services.AddControllers().AddFluentValidation
-                 (x => x.RegisterValidatorsFromAssemblyContaining<Contact>());*/
-
             builder.Services.AddControllers();
-              //  .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ContactValidation>());
+
+            /*  
+              builder.Services.AddControllers();
+              builder.Services.AddCors(options =>
+              {
+                  options.AddPolicy("AllowSpecificOrigins",
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+
+                          policy.WithOrigins("http://localhost:3000", "https://myfrontend.com") 
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+              });*/
 
 
 
@@ -105,31 +115,73 @@ namespace ApiLayer
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()
                             .AddEntityFrameworkStores<ApplicationContext>()
                             .AddDefaultTokenProviders();
+
+
+
             // Adding Authentication  
+            /* builder.Services.AddAuthentication(options =>
+             {
+                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+             })
+
+                         // Adding Jwt Bearer  
+                         .AddJwtBearer(options =>
+                         {
+                             options.SaveToken = true;
+                             options.RequireHttpsMetadata = false;
+                             options.TokenValidationParameters = new TokenValidationParameters()
+                             {
+                                 ValidateIssuer = true,
+                                 ValidateAudience = true,
+                                 ValidAudience = builder.Configuration["JWT:ValidAudience"],
+                                 ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+                                 ClockSkew = TimeSpan.Zero,
+                                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+                             };
+                         });
+
+
+
+ */
+
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-
-                        // Adding Jwt Bearer  
-                        .AddJwtBearer(options =>
-                        {
-                            options.SaveToken = true;
-                            options.RequireHttpsMetadata = false;
-                            options.TokenValidationParameters = new TokenValidationParameters()
-                            {
-                                ValidateIssuer = true,
-                                ValidateAudience = true,
-                                ValidAudience = builder.Configuration["JWT:ValidAudience"],
-                                ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
-                                ClockSkew = TimeSpan.Zero,
-                                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
-                            };
-                        });
+.AddJwtBearer(options =>
+{
+    options.SaveToken = true;
+    options.RequireHttpsMetadata = false; // HTTPS istifadə etməyəcəksinizsə (development üçün yaxşıdır)
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["JWT:ValidAudience"],
+        ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+        ClockSkew = TimeSpan.Zero, // Token vaxtı səhvini sıfırlamaq
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+    };
+});
 
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin()
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
+
+
+
+            builder.Services.AddAuthorization();
 
 
 
@@ -142,8 +194,10 @@ namespace ApiLayer
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseCors("AllowAll");
 
+            app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

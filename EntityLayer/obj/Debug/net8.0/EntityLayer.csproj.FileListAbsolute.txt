@@ -6,6 +6,7 @@ C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
 C:\Users\LENOVO\source\repos\GlobalMart\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb

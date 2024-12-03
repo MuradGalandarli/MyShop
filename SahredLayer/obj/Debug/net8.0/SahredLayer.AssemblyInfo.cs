@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SahredLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26a8b1abef265432cd937467c66fb232ffa0c542")]
 [assembly: System.Reflection.AssemblyProductAttribute("SahredLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SahredLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

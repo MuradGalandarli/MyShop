@@ -161,6 +161,7 @@ C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.Assem
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.sourcelink.json
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets\msbuild.ApiLayer.Microsoft.AspNetCore.StaticWebAssets.props
