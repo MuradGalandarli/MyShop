@@ -26,6 +26,11 @@ namespace DataAccessLayer.Concret
         {
             try
             {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == t.UserIdFromToken);
+                if (user != null)
+                {
+                    t.UserId = user.UserId;
+                }
                 var checkUser = _context.Users.Any(x => x.UserId == t.UserId);
                 var checkProduct = _context.Products.Any(x => x.ProductId == t.ProductId && x.IsActive == true);
                 var checkOrderStatus = _context.Orders.Any(x => x.UserId == t.UserId && x.ProductId == t.ProductId && x.OrderStatus == OrderStatus.WasSold);
@@ -47,7 +52,6 @@ namespace DataAccessLayer.Concret
                 return false;
             }
         }
-
 
         public async Task<bool> Delete(int id)
         {
@@ -87,7 +91,6 @@ namespace DataAccessLayer.Concret
 
         }
 
-
         public async Task<Comment> GetById(int id)
         {
             try
@@ -112,10 +115,25 @@ namespace DataAccessLayer.Concret
             }
         }
 
+        public async Task<List<Comment>> GetByProductIdAllComment(int productId)
+        {
+            var data = await _context.Comments.Where(x => x.ProductId == productId && x.IsActive == true).ToListAsync();
+            if(data != null)
+            {
+                return data;
+            }
+            return new List<Comment>();
+        }
+
         public async Task<bool> Update(Comment t)
         {
             try
             {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == t.UserIdFromToken);
+                if (user != null)
+                {
+                    t.UserId = user.UserId;
+                }
                 var checkUser = _context.Users.Any(x => x.UserId == t.UserId);
                 var checkProduct = _context.Products.Any(x => x.ProductId == t.ProductId && x.IsActive == true);
                 var checkComment = _context.Comments.Any(x => x.CommentId == t.CommentId && x.IsActive == true);

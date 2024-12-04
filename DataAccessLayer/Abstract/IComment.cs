@@ -9,6 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IComment:IGeneric<Comment>
     {
-        
+        public Task<List<Comment>> GetByProductIdAllComment(int productId);
     }
 }

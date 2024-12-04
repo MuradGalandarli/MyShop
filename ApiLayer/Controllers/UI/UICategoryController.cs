@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using AutoMapper;
+using DataTransferObject.ResponseDto;
 
 namespace ApiLayer.Controllers.UI
 {
@@ -12,16 +14,23 @@ namespace ApiLayer.Controllers.UI
     public class UICategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
-        public UICategoryController(ICategoryService categoryService)
+        private readonly IMapper _mapper;
+        public UICategoryController(ICategoryService categoryService,
+            IMapper mapper)
         {
             _categoryService = categoryService;
+            _mapper = mapper;   
         }
 
         [HttpPost("GetAllCategoryUI")]
         public async Task<IActionResult> GetAllCategory()
         {
             var result = await _categoryService.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+          
+            var mapCategory = _mapper.Map<List<ResponseCategory>>(result);
+
+            return mapCategory != null ? Ok(mapCategory) : BadRequest();
+
         }
 
         [HttpPost("GetByIdAllProductUI")]
@@ -29,15 +38,16 @@ namespace ApiLayer.Controllers.UI
         {
           
             var result = await _categoryService.GetCategoryIdAllProduct(id);
+            var mapCategory = _mapper.Map<List<ResponseCategory>>(result);
             var options = new JsonSerializerOptions
             {
                 ReferenceHandler = ReferenceHandler.Preserve,
                 WriteIndented = true
             };
 
-            var json = JsonSerializer.Serialize(result, options);
-
-            return (json != null ? Ok(json) : BadRequest());
+            var category = JsonSerializer.Serialize(mapCategory, options);
+           
+            return category != null ? Ok(category) : BadRequest();
         }
 
 

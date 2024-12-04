@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLayer.Service;
 using DataTransferObject.DtoEntity;
+using DataTransferObject.ResponseDto;
 using EntityLayer.Entity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -8,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ContactController : ControllerBase
@@ -27,14 +28,26 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllContact()
         {
             var result = await _contactService.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapContact = _mapper.Map<List<ResponseContact>>(result);
+                return Ok(mapContact);
+
+            }
+            return BadRequest();
         }
 
-        [HttpGet("GetByIdContact{id}")]
+        [HttpGet("GetByIdContact/{id}")]
         public async Task<IActionResult> GetByIdContact(int id)
         {
             var result = await _contactService.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapContact = _mapper.Map<ResponseContact>(result);
+                return Ok(mapContact);
+
+            }
+            return BadRequest();
         }
 
         [HttpPut("UpdateContact")]
@@ -45,7 +58,7 @@ namespace ApiLayer.Controllers.Admin
             return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
         }
 
-        [HttpDelete("DeleteContact{id}")]
+        [HttpDelete("DeleteContact/{id}")]
         public async Task<IActionResult> DeleteContact(int id)
         {
             bool IsSuccess = await _contactService.Delete(id);

@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Abstract;
+﻿using Azure.Core;
+using DataAccessLayer.Abstract;
 using EntityLayer.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -83,6 +84,39 @@ namespace DataAccessLayer.Concret
             }
         }
 
+        public async Task<bool> DeleteUserWithToken(string userId)
+        {
+            try
+            {
+                var data = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == userId);
+                if (data != null)
+                {
+                    var checkUser = await _userManager.FindByIdAsync(data.ApplicationUserId);
+
+                    if (checkUser != null)
+                    {
+                        _context.Users.Remove(data);
+
+                        if (data.Orders != null)
+                        {
+                            foreach (var order in data.Orders.Where(x => x.OrderStatus == EntityLayer.Enums.OrderEnum.OrderStatus.AddedToCart))
+                            {
+                                order.OrderStatus = EntityLayer.Enums.OrderEnum.OrderStatus.Delete;
+                            }
+                        }
+
+                        await _context.SaveChangesAsync();
+                        return true;
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
+        }
 
         public async Task<List<User>> GetAll()
         {
@@ -105,6 +139,20 @@ namespace DataAccessLayer.Concret
             {
                 var result = await _context.Users.FirstOrDefaultAsync(x => x.UserId == id);
                 return (result != null ? result : null);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return null;
+            }
+        }
+
+        public async Task<User> GetByIdWithToken(string userId)
+        {
+            try
+            {
+                var result = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == userId);
+                return result;
             }
             catch (Exception ex)
             {

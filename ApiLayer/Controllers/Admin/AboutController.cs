@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLayer.Service;
 using DataTransferObject.DtoEntity;
+using DataTransferObject.ResponseDto;
 using EntityLayer.Entity;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
@@ -10,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Query.Internal;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class AboutController : ControllerBase
@@ -34,14 +35,27 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllAbout()
         {
             var result = await _aboutService.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result!= null)
+            {
+               var mapAbout = _mapper.Map<List<ResponseAbout>>(result);
+                return Ok(mapAbout);
+                
+            }
+                return  BadRequest();
         }
 
         [HttpGet("GetByIdAbout{id}")]
         public async Task<IActionResult> GetByIdAbout(int id)
         {
             var result = await _aboutService.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapAbout = _mapper.Map<ResponseAbout>(result);
+                return Ok(mapAbout);
+
+            }
+            return BadRequest();
+           
         }
 
         [HttpPost("AddAbout")]

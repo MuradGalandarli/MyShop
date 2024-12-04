@@ -29,6 +29,12 @@ namespace BusinessLayer.Manager
             return data;
         }
 
+        public async Task<bool> DeleteUserWithToken(string userId)
+        {
+            var data = await _user.DeleteUserWithToken(userId);
+            return data;
+        }
+
         public async Task<List<User>> GetAll()
         {
             var data = await _user.GetAll();
@@ -38,6 +44,12 @@ namespace BusinessLayer.Manager
         public async Task<User> GetById(int id)
         {
             var data = await _user.GetById(id);
+            return data;
+        }
+
+        public async Task<User> GetByIdWithToken(string userId)
+        {
+            var data = await _user.GetByIdWithToken(userId);
             return data;
         }
 

@@ -9,6 +9,6 @@ namespace BusinessLayer.Service
 {
     public interface IFavoriteProductService:IGenericService<FavoriteProduct>
     {
-        public Task<List<Product>> GetUserIdAllFavoriteProduct(int userId);
+        public Task<List<Product>> GetUserIdAllFavoriteProduct(string userId);
     }
 }

@@ -14,7 +14,7 @@ namespace DataTransferObject.DtoEntity
         public string? SureName { get; set; }
         // public List<Order>? Orders { get; set; }
         //  public List<FeedbackScore>? FeedbackScores { get; set; }
-        public string? ApplicationUserId { get; set; }
+       // public string? ApplicationUserId { get; set; }
         // public ApplicationUser? ApplicationUser { get; set; }
         //  public List<Comment>? Comments { get; set; }
     }

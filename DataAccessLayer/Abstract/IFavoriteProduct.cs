@@ -9,6 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IFavoriteProduct:IGeneric<FavoriteProduct>
     {
-        public Task<List<Product>> GetUserIdAllFavoriteProduct(int userId);
+        public Task<List<Product>> GetUserIdAllFavoriteProduct(string userId);
     }
 }

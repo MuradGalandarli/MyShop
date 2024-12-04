@@ -13,7 +13,7 @@ namespace BusinessLayer.Validation
     {
         public FavoriteProductValidator()
         {
-            RuleFor(x => x.UserId).NotEmpty().NotNull();
+           // RuleFor(x => x.UserId).NotEmpty().NotNull();
             RuleFor(x => x.ProductId).NotEmpty().NotNull();
         }
     }

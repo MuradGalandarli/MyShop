@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using BusinessLayer.Helpers;
 using BusinessLayer.Service;
 using DataTransferObject.DtoEntity;
+using DataTransferObject.ResponseDto;
 using EntityLayer.Entity;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize (Roles ="admin,user")]
+    [Authorize (Roles ="Admin,User")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -30,14 +32,26 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllUser()
         {
             var result = await _userService.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapUser = _mapper.Map<ResponseAbout>(result);
+                return Ok(mapUser);
+
+            }
+            return BadRequest();
         }
 
         [HttpGet("GetByIdUser{id}")]
         public async Task<IActionResult> GetByIdUser(int id)
         {
             var result = await _userService.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapUser = _mapper.Map<ResponseAbout>(result);
+                return Ok(mapUser);
+
+            }
+            return BadRequest();
         }
 
         [HttpPost("AddUser")]
@@ -46,7 +60,10 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authorization"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertUser = _mapper.Map<User>(t);
+                convertUser.ApplicationUserId = userId;
                 bool IsSuccess = await _userService.Add(convertUser);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
@@ -60,19 +77,41 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authorization"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertUser = _mapper.Map<User>(t);
+                convertUser.ApplicationUserId = userId;
                 bool IsSuccess = await _userService.Update(convertUser);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
             return BadRequest();
         }
 
-        [HttpDelete("DeleteUser")]
+        [HttpDelete("DeleteUser/{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
+           
             bool IsSuccess = await _userService.Delete(id);
             return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
         }
 
+        [HttpDelete("DeleteUserWithToken")]
+        public async Task<IActionResult> DeleteUserWithToken()
+        {
+            string token = Request.Headers["Authorization"];
+            string userId = TokenHelper.ProcessToken(token);
+            bool IsSuccess = await _userService.DeleteUserWithToken(userId);
+            return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
+        }
+
+        [HttpGet("GetByIdUser")]
+        public async Task<IActionResult> GetByIdUser()
+        {
+            string token = Request.Headers["Authorization"];
+            string userId = TokenHelper.ProcessToken(token);
+            var result = await _userService.GetByIdWithToken(userId);
+            var mapUser = _mapper.Map<User>(result);    
+            return (mapUser != null ? Ok(mapUser) : BadRequest());
+        }
     }
 }

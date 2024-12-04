@@ -9,5 +9,6 @@ namespace BusinessLayer.Service
 {
     public interface ICommentService:IGenericService<Comment>
     {
+        public Task<List<Comment>> GetByProductIdAllComment(int productId);
     }
 }

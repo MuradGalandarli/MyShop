@@ -8,10 +8,12 @@ using System.Text.Json;
 using AutoMapper;
 using DataTransferObject.DtoEntity;
 using FluentValidation;
+using BusinessLayer.Helpers;
+using DataTransferObject.ResponseDto;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles ="admin,user")]
+    [Authorize(Roles ="Admin,User")]
     [Route("api/[controller]")]
     [ApiController]
     public class FavoriteProductController : ControllerBase
@@ -32,14 +34,25 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllFavoriteProduct()
         {
             var result = await _favoriteProduct.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapFavoriteProduct = _mapper.Map<List<ResponseFavoriteProduct>>(result);
+                return Ok(mapFavoriteProduct);
+
+            }
+            return BadRequest();
         }
 
-        [HttpGet("GetByIdFavoriteProduct")]
+        [HttpGet("GetByIdFavoriteProduct/{id}")]
         public async Task<IActionResult> GetByIdFavoriteProduct(int id)
         {
-            var result = await _favoriteProduct.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            var result = await _favoriteProduct.GetById(id); if (result != null)
+            {
+                var mapFavoriteProduct = _mapper.Map<ResponseFavoriteProduct>(result);
+                return Ok(mapFavoriteProduct);
+
+            }
+            return BadRequest();
         }
 
         [HttpPost("AddFavoriteProduct")]
@@ -48,7 +61,10 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authentication"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertFavoriteProduct = _mapper.Map<FavoriteProduct>(t);
+                convertFavoriteProduct.UserIdFromToken = userId;
                 bool IsSuccess = await _favoriteProduct.Add(convertFavoriteProduct);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
@@ -61,14 +77,17 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authentication"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertFavoriteProduct = _mapper.Map<FavoriteProduct>(t);
+                convertFavoriteProduct.UserIdFromToken = userId;    
                 bool IsSuccess = await _favoriteProduct.Update(convertFavoriteProduct);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
             return BadRequest();
         }
 
-        [HttpDelete("DeleteFavoriteProduct")]
+        [HttpDelete("DeleteFavoriteProduct/{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             bool IsSuccess = await _favoriteProduct.Delete(id);
@@ -76,17 +95,20 @@ namespace ApiLayer.Controllers.Admin
         }
         
         [HttpGet("GetUserIdAllFavoriteProduct")]
-        public async Task<IActionResult> GetUserIdAllFavoriteProduct(int userId)
+        public async Task<IActionResult> GetUserIdAllFavoriteProduct()
         {
-
+            string token = Request.Headers["Authentication"];
+            string userId = TokenHelper.ProcessToken(token);
             var result = await _favoriteProduct.GetUserIdAllFavoriteProduct(userId);
+            var mapFavoriteProduct = _mapper.Map<List<ResponseProduct>>(result);
+           
             var options = new JsonSerializerOptions
             {
                 ReferenceHandler = ReferenceHandler.Preserve,
                 WriteIndented = true
             };
 
-            var json = JsonSerializer.Serialize(result, options);
+            var json = JsonSerializer.Serialize(mapFavoriteProduct, options);
 
             return (json != null ? Ok(json) : BadRequest());
           

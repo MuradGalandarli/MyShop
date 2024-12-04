@@ -11,7 +11,7 @@ using FluentValidation;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles ="admin")]
+    [Authorize(Roles ="Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
@@ -100,7 +100,7 @@ namespace ApiLayer.Controllers.Admin
             return BadRequest();
         }
 
-        [HttpDelete("DeleteProduct({id})")]
+        [HttpDelete("DeleteProduct/{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             bool IsSuccess = await _productService.Delete(id);

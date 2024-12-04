@@ -14,7 +14,7 @@ namespace BusinessLayer.Validation
         {
             RuleFor(x => x.CountStar).NotEmpty().NotNull();
             RuleFor(x => x.ProductId).NotEmpty().NotNull();
-            RuleFor(x => x.UserId).NotEmpty().NotNull();
+           // RuleFor(x => x.UserId).NotEmpty().NotNull();
         }
     }
 }

@@ -42,6 +42,12 @@ namespace BusinessLayer.Manager
             return data;
         }
 
+        public async Task<List<Comment>> GetByProductIdAllComment(int productId)
+        {
+            var data = await _comment.GetByProductIdAllComment(productId);
+            return data;
+        }
+
         public async Task<bool> Update(Comment t)
         {
             bool IsSuccess = await _comment.Update(t);

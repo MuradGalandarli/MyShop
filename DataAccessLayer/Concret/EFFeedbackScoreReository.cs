@@ -27,6 +27,11 @@ namespace DataAccessLayer.Concret
         {
             try
             {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == t.UserIdFromToken);
+                if (user != null)
+                {
+                    t.UserId = user.UserId;
+                }
                 var checkFeedbackScores = _context.FeedbackScores.Any(x => x.ProductId == t.ProductId && x.UserId == t.UserId && x.IsActive == true);
                 var checkProduct = _context.Products.Any(x => x.ProductId == t.ProductId && x.IsActive == true);
                 var checkUser = _context.Users.Any(x => x.UserId == t.UserId);
@@ -150,6 +155,11 @@ namespace DataAccessLayer.Concret
         {
             try
             {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == t.UserIdFromToken);
+                if (user != null)
+                {
+                   t.UserId = user.UserId;
+                }
                 var result = _context.FeedbackScores.Update(t);
                 await _context.SaveChangesAsync();
                 return true;

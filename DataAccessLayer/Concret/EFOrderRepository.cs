@@ -32,8 +32,14 @@ namespace DataAccessLayer.Concret
         {
             try
             {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == o.UserIdFromToken);
+                if (user != null)
+                {
+                    o.UserId = user.UserId;
+                }
                 var product = _context.Products.FirstOrDefault(x => x.ProductId == o.ProductId && x.IsActive == true);
                 var productDelete = _context.Products.Any(x => x.ProductId == o.ProductId && x.IsActive == false);
+
 
                 if (product == null)
                 {

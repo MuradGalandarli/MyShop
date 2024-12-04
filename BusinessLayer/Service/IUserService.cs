@@ -9,5 +9,7 @@ namespace BusinessLayer.Service
 {
     public interface IUserService:IGenericService<User>
     {
+        public Task<bool> DeleteUserWithToken(string userId);
+        public Task<User> GetByIdWithToken(string userId);
     }
 }

@@ -7,6 +7,9 @@ using System.Text.Json;
 using AutoMapper;
 using DataTransferObject.DtoEntity;
 using FluentValidation;
+using System.Net;
+using BusinessLayer.Helpers;
+using DataTransferObject.ResponseDto;
 
 namespace ApiLayer.Controllers.UI
 {
@@ -31,30 +34,34 @@ namespace ApiLayer.Controllers.UI
         public async Task<IActionResult> GetAllOrder()
         {
             var result = await order.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            var mapOrder = _mapper.Map<ResponseOrder>(result);
+            return mapOrder != null ? Ok(mapOrder) : BadRequest();
+
         }
 
         [HttpGet("GetByIdOrderUI")]
         public async Task<IActionResult> GetByIdOrder(int id)
         {
             var result = await order.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            var mapOrder = _mapper.Map<ResponseOrder>(result);
+            return result != null ? Ok(mapOrder) : BadRequest();
         }
 
         [HttpGet("BetsSeller")]
         public async Task<IActionResult> BestSeller()
         {
             var result = await order.BestSeller();
+
+            var mapOrder = _mapper.Map<List<ResponseProduct>>(result);
             var options = new JsonSerializerOptions
             {
                 ReferenceHandler = ReferenceHandler.Preserve,
                 WriteIndented = true
             };
 
-            var json = JsonSerializer.Serialize(result, options);
+            var data = JsonSerializer.Serialize(mapOrder, options);
 
-            return (json != null ? Ok(json) : BadRequest());
-
+            return result != null ? Ok(data) : BadRequest();
         }
 
         [HttpPost("AddOrder")]
@@ -63,7 +70,10 @@ namespace ApiLayer.Controllers.UI
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authorization"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertOrder = _mapper.Map<Order>(t);
+                convertOrder.UserIdFromToken = userId;
                 var result = await order.AddOrder(convertOrder);
                 return (result != null ? Ok(result) : BadRequest());
             }

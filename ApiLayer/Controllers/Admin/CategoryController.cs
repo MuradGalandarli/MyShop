@@ -6,10 +6,13 @@ using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using System.Text;
+using DataTransferObject.ResponseDto;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize (Roles ="admin")]
+    [Authorize (Roles ="Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
@@ -33,19 +36,32 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllCategory()
         {
             var result = await _categoryService.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapCategoryt = _mapper.Map<ResponseAbout>(result);
+                return Ok(mapCategoryt);
+
+            }
+            return BadRequest();
         }
 
-        [HttpGet("GetByIdCategory{id}")]
+        [HttpGet("GetByIdCategory/{id}")]
         public async Task<IActionResult> GetByIdCategory(int id)
         {
             var result =  await _categoryService.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapCategory = _mapper.Map<ResponseCategory>(result);
+                return Ok(mapCategory);
+
+            }
+            return BadRequest();
         }
 
         [HttpPost("AddCategory")]
         public async Task<IActionResult> AddCategory([FromBody]CategoryDto t)
         {
+
             var resultValid = await validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
@@ -69,7 +85,7 @@ namespace ApiLayer.Controllers.Admin
             return BadRequest();
         }
 
-        [HttpDelete("DeleteCategory{id}")]
+        [HttpDelete("DeleteCategory/{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             bool IsSuccess = await _categoryService.Delete(id);

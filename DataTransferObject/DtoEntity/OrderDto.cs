@@ -15,7 +15,7 @@ namespace DataTransferObject.DtoEntity
         // public DateTime SellTime { get; set; }
         // public Enums.OrderEnum.OrderStatus OrderStatus { get; set; }
         //  public User? User { get; set; }
-        public int UserId { get; set; }
+        //public int UserId { get; set; }
         // public Product? Product { get; set; }
         public int ProductId { get; set; }
     }

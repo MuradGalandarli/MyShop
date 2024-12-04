@@ -202,7 +202,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CategoryController",
     "Method": "DeleteCategory",
-    "RelativePath": "api/Category/DeleteCategory{id}",
+    "RelativePath": "api/Category/DeleteCategory/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -228,7 +228,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CategoryController",
     "Method": "GetByIdCategory",
-    "RelativePath": "api/Category/GetByIdCategory{id}",
+    "RelativePath": "api/Category/GetByIdCategory/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -259,7 +259,7 @@
   },
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
-    "Method": "AddCategory",
+    "Method": "AddComment",
     "RelativePath": "api/Comment/AddComment",
     "HttpMethod": "POST",
     "IsController": true,
@@ -275,7 +275,7 @@
   },
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
-    "Method": "DeleteCategory",
+    "Method": "DeleteComment",
     "RelativePath": "api/Comment/DeleteComment",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -291,7 +291,7 @@
   },
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
-    "Method": "GetAllCategory",
+    "Method": "GetAllCommet",
     "RelativePath": "api/Comment/GetAllComment",
     "HttpMethod": "POST",
     "IsController": true,
@@ -301,7 +301,7 @@
   },
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
-    "Method": "GetByIdCategory",
+    "Method": "GetByIdComment",
     "RelativePath": "api/Comment/GetByIdComment",
     "HttpMethod": "GET",
     "IsController": true,
@@ -317,7 +317,23 @@
   },
   {
     "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
-    "Method": "UpdateCategory",
+    "Method": "GetByProductIdAllComment",
+    "RelativePath": "api/Comment/GetByProductIdAllComment/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiLayer.Controllers.Admin.CommentController",
+    "Method": "UpdateComment",
     "RelativePath": "api/Comment/UpdateComment",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -334,7 +350,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.ContactController",
     "Method": "DeleteContact",
-    "RelativePath": "api/Contact/DeleteContact{id}",
+    "RelativePath": "api/Contact/DeleteContact/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -360,7 +376,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.ContactController",
     "Method": "GetByIdContact",
-    "RelativePath": "api/Contact/GetByIdContact{id}",
+    "RelativePath": "api/Contact/GetByIdContact/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -408,7 +424,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.FavoriteProductController",
     "Method": "DeleteCategory",
-    "RelativePath": "api/FavoriteProduct/DeleteFavoriteProduct",
+    "RelativePath": "api/FavoriteProduct/DeleteFavoriteProduct/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -416,7 +432,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -434,7 +450,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.FavoriteProductController",
     "Method": "GetByIdFavoriteProduct",
-    "RelativePath": "api/FavoriteProduct/GetByIdFavoriteProduct",
+    "RelativePath": "api/FavoriteProduct/GetByIdFavoriteProduct/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -442,7 +458,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -454,13 +470,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -681,7 +691,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.ProductController",
     "Method": "DeleteProduct",
-    "RelativePath": "api/Product/DeleteProduct({id})",
+    "RelativePath": "api/Product/DeleteProduct/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -956,7 +966,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.UI.UIProductController",
     "Method": "GetIdProduct",
-    "RelativePath": "api/UIProduct/GetByProductUI({id})",
+    "RelativePath": "api/UIProduct/GetByProductUI/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1014,7 +1024,7 @@
   {
     "ContainingType": "ApiLayer.Controllers.Admin.UserController",
     "Method": "DeleteUser",
-    "RelativePath": "api/User/DeleteUser",
+    "RelativePath": "api/User/DeleteUser/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1022,9 +1032,19 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiLayer.Controllers.Admin.UserController",
+    "Method": "DeleteUserWithToken",
+    "RelativePath": "api/User/DeleteUserWithToken",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1032,6 +1052,16 @@
     "Method": "GetAllUser",
     "RelativePath": "api/User/GetAllUser",
     "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiLayer.Controllers.Admin.UserController",
+    "Method": "GetByIdUser",
+    "RelativePath": "api/User/GetByIdUser",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

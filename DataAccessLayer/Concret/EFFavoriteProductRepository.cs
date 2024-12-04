@@ -94,15 +94,19 @@ namespace DataAccessLayer.Concret
             }
         }
 
-        public async Task<List<Product>> GetUserIdAllFavoriteProduct(int userId)
+        public async Task<List<Product>> GetUserIdAllFavoriteProduct(string userId)
         {
             try
             {
-                var productId = await _context.FavoriteProducts.Where(x => x.IsActive == true && x.UserId == userId).Select(a => a.ProductId).ToListAsync();
-                if (productId.Count > 0)
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.ApplicationUserId == userId);
+                if (user != null)
                 {
-                    var productImageList = await _context.Products.Where(x => x.IsActive == true && productId.Contains(x.ProductId)).Include(x => x.ProductImage).ToListAsync();
-                    return productImageList;
+                    var productId = await _context.FavoriteProducts.Where(x => x.IsActive == true && x.UserId == user.UserId).Select(a => a.ProductId).ToListAsync();
+                    if (productId.Count > 0)
+                    {
+                        var productImageList = await _context.Products.Where(x => x.IsActive == true && productId.Contains(x.ProductId)).Include(x => x.ProductImage).ToListAsync();
+                        return productImageList;
+                    }
                 }
                 return null;
             }

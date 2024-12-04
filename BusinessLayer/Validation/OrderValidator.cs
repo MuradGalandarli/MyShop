@@ -14,7 +14,7 @@ namespace BusinessLayer.Validation
         public OrderValidator()
         {
             RuleFor(x => x.OrderCount).NotEmpty().NotNull();
-            RuleFor(x => x.UserId).NotEmpty().NotNull();
+           // RuleFor(x => x.UserId).NotEmpty().NotNull();
             RuleFor(x => x.TotalAmount).NotEmpty().NotNull();
             RuleFor(x => x.ProductId).NotEmpty().NotNull();
         }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BusinessLayer.Helpers;
 using BusinessLayer.Service;
 using DataTransferObject.DtoEntity;
 using EntityLayer.Entity;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles = "admin,user")]
+    [Authorize(Roles = "Admin,User")]
     [Route("api/[controller]")]
     [ApiController]
     public class FeedbackScoreController : ControllerBase
@@ -32,7 +33,10 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authentication"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertFeedbackScore = _mapper.Map<FeedbackScore>(t);
+                convertFeedbackScore.UserIdFromToken = userId;
                 bool IsSuccess = await _feedbackScore.Add(convertFeedbackScore);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
@@ -45,7 +49,10 @@ namespace ApiLayer.Controllers.Admin
             var resultValid = await _validator.ValidateAsync(t);
             if (resultValid.IsValid)
             {
+                string token = Request.Headers["Authentication"];
+                string userId = TokenHelper.ProcessToken(token);
                 var convertFeedbackScore = _mapper.Map<FeedbackScore>(t);
+                convertFeedbackScore.UserIdFromToken = userId;
                 bool IsSuccess = await _feedbackScore.Update(convertFeedbackScore);
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }

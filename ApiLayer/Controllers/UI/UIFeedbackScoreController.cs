@@ -2,6 +2,7 @@
 using BusinessLayer.Service;
 using DataAccessLayer.Abstract;
 using DataTransferObject.DtoEntity;
+using DataTransferObject.ResponseDto;
 using EntityLayer.Entity;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
@@ -25,27 +26,35 @@ namespace ApiLayer.Controllers.UI
         {
             this._feedbackScore = _feedbackScore;
             _mapper = mapper;
-            _validator = validator; 
+            _validator = validator;
         }
         [HttpPost("GetAllFeedbackScoreUI")]
         public async Task<IActionResult> GetAllFeedbackScore()
         {
             var result = await _feedbackScore.GetAll();
-            return result != null ? Ok(result) : BadRequest();
+
+            var mapFeedbackScore = _mapper.Map<List<ResponseFeedbackScore>>(result);
+            return mapFeedbackScore != null ? Ok(mapFeedbackScore) : BadRequest();
+
         }
 
         [HttpGet("GetByIdFeedbackScoreUI/{id}")]
         public async Task<IActionResult> GetByIdFeedbackScore(int id)
         {
             var result = await _feedbackScore.GetById(id);
-            return result != null ? Ok(result) : BadRequest();
+
+            var mapFeedbackScore = _mapper.Map<ResponseFeedbackScore>(result);
+            return mapFeedbackScore != null ? Ok(mapFeedbackScore) : BadRequest();
+
         }
 
         [HttpPost("GetProductIdScoreUI/{productId}")]
         public async Task<IActionResult> Score(int productId)
         {
-            var result = await _feedbackScore.Score(productId);  
-                return (result != null ? Ok(result) : BadRequest());
+            var result = await _feedbackScore.Score(productId);
+            var mapFeedbackScore = _mapper.Map<ResponseFeedbackScore>(result);
+            return mapFeedbackScore != null ? Ok(mapFeedbackScore) : BadRequest();
+
         }
     }
 }

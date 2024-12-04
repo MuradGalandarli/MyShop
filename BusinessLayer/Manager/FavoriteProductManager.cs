@@ -41,7 +41,7 @@ namespace BusinessLayer.Manager
             return data;
         }
 
-        public async Task<List<Product>> GetUserIdAllFavoriteProduct(int userId)
+        public async Task<List<Product>> GetUserIdAllFavoriteProduct(string userId)
         {
 
             var data = await _favoriteProduct.GetUserIdAllFavoriteProduct(userId);

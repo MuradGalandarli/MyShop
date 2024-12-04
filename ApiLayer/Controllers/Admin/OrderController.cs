@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLayer.Service;
 using DataTransferObject.DtoEntity;
+using DataTransferObject.ResponseDto;
 using EntityLayer.Entity;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLayer.Controllers.Admin
 {
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
@@ -30,14 +31,26 @@ namespace ApiLayer.Controllers.Admin
         public async Task<IActionResult> GetAllOrder()
         {
             var result = await order.GetAll();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapOrder = _mapper.Map<List<ResponseOrder>>(result);
+                return Ok(mapOrder);
+
+            }
+            return BadRequest();
         }
 
         [HttpGet("GetByIdOrder/{id}")]
         public async Task<IActionResult> GetByIdOrder(int id)
         {
             var result = await order.GetById(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapOrder = _mapper.Map<ResponseOrder>(result);
+                return Ok(mapOrder);
+
+            }
+            return BadRequest();
         }
 /*
         [HttpPost("AddOrder")]
@@ -60,6 +73,7 @@ namespace ApiLayer.Controllers.Admin
             bool IsSuccess = await order.Delete(id);
             return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
         }
+
         [HttpPost("Cancellation/{orderId}")]
         public async Task<IActionResult> Cancellation(int orderId)
         {
@@ -73,17 +87,31 @@ namespace ApiLayer.Controllers.Admin
             var result = await order.Selled(orderId);
             return Ok(result);
         }
+
         [HttpGet("GetByIdAddedToCartOrder/{id}")]
         public async Task<IActionResult> GetByIdAddedToCartOrder(int id)
         {
             var result = await order.GetByIdAddedToCartOrder(id);
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapOrder = _mapper.Map<ResponseOrder>(result);
+                return Ok(mapOrder);
+
+            }
+            return BadRequest();
         }
+
         [HttpGet("OrderAddedToCartAllListOrder")]
         public async Task<IActionResult> OrderAddedToCartAllListOrder()
         {
             var result = await order.OrderAddedToCartAllListOrder();
-            return (result != null ? Ok(result) : BadRequest());
+            if (result != null)
+            {
+                var mapOrder = _mapper.Map<List<ResponseOrder>>(result);
+                return Ok(mapOrder);
+
+            }
+            return BadRequest();
         }
 
     }

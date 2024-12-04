@@ -6,6 +6,8 @@ using System.Text.Json.Serialization;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Hosting;
+using DataTransferObject.ResponseDto;
+using AutoMapper;
 
 namespace ApiLayer.Controllers.Admin
 {
@@ -14,25 +16,29 @@ namespace ApiLayer.Controllers.Admin
     public class TrendController : ControllerBase
     {
         private readonly ITrendService _trendService;
-        public TrendController(ITrendService _trendService)
+        private readonly IMapper _mapper;
+        public TrendController(ITrendService _trendService,
+             IMapper mapper)
         {
-           this._trendService = _trendService;
+            this._trendService = _trendService;
+            _mapper = mapper;
         }
-        
+
         [HttpGet("GetMostClicked")]
         public async Task<IActionResult> GetMostClicked()
         {
             var result = await _trendService.GetMostClicked();
+            var mapTrend = _mapper.Map<List<ResponseProduct>>(result);
             var options = new JsonSerializerOptions
             {
                 ReferenceHandler = ReferenceHandler.Preserve,
                 WriteIndented = true
             };
+           
+            var mostClicked = JsonSerializer.Serialize(mapTrend, options);
 
-            var json = JsonSerializer.Serialize(result, options);
+            return mostClicked != null ? Ok(mostClicked) : BadRequest();
 
-          
-            return json != null ? Ok(json) : BadRequest();
         }
 
         [HttpGet("TrendProduct")]
@@ -45,16 +51,19 @@ namespace ApiLayer.Controllers.Admin
                 WriteIndented = true
             };
 
-            var json = JsonSerializer.Serialize(result, options);
+            var trend = JsonSerializer.Serialize(result, options);
 
-            return (json != null ? Ok(json) : BadRequest());
+            var mapTrend = _mapper.Map<List<ResponseProduct>>(trend);
+            return mapTrend != null ? Ok(mapTrend) : BadRequest();
+
+
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         [HttpDelete("DeleteTrendProduct/{productId}")]
         public async Task<IActionResult> DeleteTrendProduct(int productId)
         {
-           await _trendService.DeleteProductFromTrend(productId);
+            await _trendService.DeleteProductFromTrend(productId);
             return Ok();
         }
 
