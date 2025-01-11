@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLayer.Controllers.UI
 {
-    // [Authorize(Roles = "admin,user")]
+    [Authorize(Roles = "admin,user")]
     [Route("api/[controller]")]
     [ApiController]
     public class UIFeedbackScoreController : ControllerBase

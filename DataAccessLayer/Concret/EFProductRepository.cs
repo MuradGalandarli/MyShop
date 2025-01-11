@@ -1,14 +1,11 @@
 ﻿using DataAccessLayer.Abstract;
 using EntityLayer.Entity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
 using SahredLayer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+
 
 namespace DataAccessLayer.Concret
 {
@@ -27,11 +24,75 @@ namespace DataAccessLayer.Concret
             _logger = logger;
         }
 
+        /*  public async Task<bool> Add(Product t)
+          {
+              try
+              {
+                  const string path = @"D:\MartImage";
+                  bool checkCategory = _context.Categories.Any(x => x.IsActive == true && x.CategoryId == t.CategoryId);
+                  if (checkCategory)
+                  {
+                      var a = await _context.Products.AddAsync(new Product
+                      {
+                          ProductName = t.ProductName,
+                          Brand = t.Brand,
+                          Description = t.Description,
+                          Price = t.Price,
+                          CategoryId = t.CategoryId,
+                          TotalCount = t.TotalCount
+
+                      });
+
+                      await _context.SaveChangesAsync();
+
+                      if (!Directory.Exists(path))
+                      {
+                          Directory.CreateDirectory(path);
+                      }
+
+                      if (t.ImageUI != null)
+                      {
+                          var productId = await _context.Products.OrderBy(x => x.ProductId).LastAsync();
+                          foreach (var image in t.ImageUI)
+                          {
+                              string extension = Path.GetExtension(image.FileName);
+                              string uniqueFileName = $"{Guid.NewGuid()}{extension}";
+
+                              string fullPath = Path.Combine(path, uniqueFileName);
+                              using (var stream = new FileStream(fullPath, FileMode.Create, FileAccess.Write))
+                              {
+                                  await image.CopyToAsync(stream);
+                              }
+
+                              _context.ProductImages.Add(new ProductImage
+                              {
+                                  ImageUrl = fullPath,
+                                  ProductId = productId.ProductId,
+                                  IsActive = true
+
+                              });
+
+                              await _context.SaveChangesAsync();
+                          }
+                      }
+                      return true;
+                  }
+
+                  return false;
+              }
+              catch (Exception ex)
+              {
+                  _logger.LogError(ex.Message);
+                  return false;
+              }
+          }
+  */
+
         public async Task<bool> Add(Product t)
         {
             try
             {
-                const string path = @"D:\MartImage";
+              
                 bool checkCategory = _context.Categories.Any(x => x.IsActive == true && x.CategoryId == t.CategoryId);
                 if (checkCategory)
                 {
@@ -48,28 +109,20 @@ namespace DataAccessLayer.Concret
 
                     await _context.SaveChangesAsync();
 
-                    if (!Directory.Exists(path))
-                    {
-                        Directory.CreateDirectory(path);
-                    }
-
+                   
                     if (t.ImageUI != null)
                     {
                         var productId = await _context.Products.OrderBy(x => x.ProductId).LastAsync();
                         foreach (var image in t.ImageUI)
                         {
-                            string extension = Path.GetExtension(image.FileName);
-                            string uniqueFileName = $"{Guid.NewGuid()}{extension}";
 
-                            string fullPath = Path.Combine(path, uniqueFileName);
-                            using (var stream = new FileStream(fullPath, FileMode.Create, FileAccess.Write))
-                            {
-                                await image.CopyToAsync(stream);
-                            }
+                            using var memoryStream = new MemoryStream();
+                            await image.CopyToAsync(memoryStream);
+                            string base64String = Convert.ToBase64String(memoryStream.ToArray());
 
-                            _context.ProductImages.Add(new ProductImage
+                        _context.ProductImages.Add(new ProductImage
                             {
-                                ImageUrl = fullPath,
+                                ImageUrl = base64String,
                                 ProductId = productId.ProductId,
                                 IsActive = true
 
@@ -89,6 +142,10 @@ namespace DataAccessLayer.Concret
                 return false;
             }
         }
+
+
+
+
 
         public async Task<bool> Delete(int id)
         {
@@ -151,6 +208,12 @@ namespace DataAccessLayer.Concret
             try
             {
                 var result = await _context.Products.Where(x => x.IsActive == true).Include(x => x.ProductImage.Where(x => x.IsActive == true)).ToListAsync();
+               
+                foreach (var item in result)
+                {
+                    item.ImageUrlUI = item.ProductImage.Select(x => x.ImageUrl).ToList();
+                    
+                }
                 return (result != null ? result : null);
             }
             catch (Exception ex)
@@ -174,7 +237,7 @@ namespace DataAccessLayer.Concret
 
                     return result;
                 }
-                return (result != null ? result : null);
+                return null;
             }
             catch (Exception ex)
             {
@@ -262,6 +325,104 @@ namespace DataAccessLayer.Concret
             }
         }
 
+        /*    public async Task<bool> Update(Product updatedProduct)
+            {
+                try
+                {
+                    var existingProduct = await GetById(updatedProduct.ProductId);
+
+                    if (existingProduct != null)
+                    {
+
+                        existingProduct.ProductName = updatedProduct.ProductName;
+                        existingProduct.ProductId = updatedProduct.ProductId;
+                        existingProduct.Price = updatedProduct.Price;
+                        existingProduct.Brand = updatedProduct.Brand;
+                        existingProduct.IsActive = updatedProduct.IsActive;
+                        existingProduct.Description = updatedProduct.Description;
+
+                        if (updatedProduct.ImageUrlUI != null)
+                        {
+                            List<string> responceUlrDelete = new List<string>();
+
+                            foreach (var image in updatedProduct.ImageUrlUI)
+                            {
+                                if (updatedProduct.ImageUrlUI != null)
+                                {
+
+                                    foreach (var removeImage in updatedProduct.ImageUrlUI)
+                                    {
+                                        var isRemoveImage = existingProduct.ProductImage.Where(x => x.IsActive == true && x.ImageUrl == removeImage).FirstOrDefault();
+                                        if (isRemoveImage != null)
+                                        {
+                                            isRemoveImage.IsActive = false;
+                                            responceUlrDelete.Add(removeImage);
+                                        }
+
+                                        DeleteImageFromFIle(removeImage);
+                                    }
+
+                                }
+                            }
+                            if (responceUlrDelete != null)
+                            {
+                                foreach (var remove in responceUlrDelete)
+                                {
+                                    updatedProduct.ImageUrlUI.Remove(remove);
+                                }
+                            }
+                        }
+
+                        if (updatedProduct.ImageUI != null)
+                        {
+                            foreach (var newImage in updatedProduct.ImageUI)
+                            {
+                                const string path = @"D:\MartImage";
+
+                                string extension = Path.GetExtension(newImage.FileName);
+                                string uniquePath = $"{Guid.NewGuid()}{extension}";
+                                string fullPath = Path.Combine(path, uniquePath);
+
+                                var checkDirectory = Path.GetDirectoryName(fullPath);
+
+
+                                if (!Directory.Exists(checkDirectory))
+                                {
+                                    Directory.CreateDirectory(checkDirectory);
+                                }
+
+                                if (Directory.Exists(checkDirectory))
+                                {
+
+                                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                                    {
+                                        await newImage.CopyToAsync(stream);
+                                    }
+                                }
+
+                                existingProduct.ProductImage.Add(new ProductImage
+                                {
+                                    ImageUrl = fullPath,
+                                    ProductId = existingProduct.ProductId,
+                                    IsActive = true
+                                });
+
+                            }
+                        }
+
+                        await _context.SaveChangesAsync();
+
+                        return true;
+                    }
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex.Message);
+                    return false;
+                }*/
+
+        //}
         public async Task<bool> Update(Product updatedProduct)
         {
             try
@@ -277,40 +438,21 @@ namespace DataAccessLayer.Concret
                     existingProduct.IsActive = updatedProduct.IsActive;
                     existingProduct.Description = updatedProduct.Description;
 
-                    if (updatedProduct.ImageUrlUI != null)
-                    {
-                        List<string> responceUlrDelete = new List<string>();
-
-                        foreach (var image in updatedProduct.ImageUrlUI)
-                        {
-                            if (updatedProduct.ImageUrlUI != null)
-                            {
-
-                                foreach (var removeImage in updatedProduct.ImageUrlUI)
-                                {
-                                    var isRemoveImage = existingProduct.ProductImage.Where(x => x.IsActive == true && x.ImageUrl == removeImage).FirstOrDefault();
-                                    if (isRemoveImage != null)
-                                    {
-                                        isRemoveImage.IsActive = false;
-                                        responceUlrDelete.Add(removeImage);
-                                    }
-
-                                    DeleteImageFromFIle(removeImage);
-                                }
-
-                            }
-                        }
-                        if (responceUlrDelete != null)
-                        {
-                            foreach (var remove in responceUlrDelete)
-                            {
-                                updatedProduct.ImageUrlUI.Remove(remove);
-                            }
-                        }
-                    }
-
                     if (updatedProduct.ImageUI != null)
                     {
+                        List<string> responseUrlDelete = new List<string>();
+
+                        foreach (var removeImage in existingProduct.ProductImage.Where(x => x.IsActive).ToList())
+                        {
+                            removeImage.IsActive = false;
+                            responseUrlDelete.Add(removeImage.ImageUrl);
+                        }
+
+                        foreach (var remove in responseUrlDelete)
+                        {
+                            DeleteImageFromFIle(remove);
+                        }
+
                         foreach (var newImage in updatedProduct.ImageUI)
                         {
                             const string path = @"D:\MartImage";
@@ -321,7 +463,6 @@ namespace DataAccessLayer.Concret
 
                             var checkDirectory = Path.GetDirectoryName(fullPath);
 
-
                             if (!Directory.Exists(checkDirectory))
                             {
                                 Directory.CreateDirectory(checkDirectory);
@@ -329,7 +470,6 @@ namespace DataAccessLayer.Concret
 
                             if (Directory.Exists(checkDirectory))
                             {
-
                                 using (var stream = new FileStream(fullPath, FileMode.Create))
                                 {
                                     await newImage.CopyToAsync(stream);
@@ -342,7 +482,6 @@ namespace DataAccessLayer.Concret
                                 ProductId = existingProduct.ProductId,
                                 IsActive = true
                             });
-
                         }
                     }
 
@@ -357,7 +496,6 @@ namespace DataAccessLayer.Concret
                 _logger.LogError(ex.Message);
                 return false;
             }
-
         }
 
         public async Task<Product> GetByIdProductUI(int id)
@@ -369,7 +507,7 @@ namespace DataAccessLayer.Concret
      FirstOrDefaultAsync(x => x.IsActive == true && x.ProductId == id);
                 if (result != null)
                 {
-                    result.ImageUrlUI = result.ProductImage.Select(x => x.ImageUrl).ToList();
+                   // result.ImageUrlUI = result.ProductImage.Select(x => x.ImageUrl).ToList();
 
                     await _trendPrtial.AddTrend(new Trend { ProductId = result.ProductId });
                     return result;

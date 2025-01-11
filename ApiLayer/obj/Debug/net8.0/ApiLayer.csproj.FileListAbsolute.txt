@@ -176,3 +176,7 @@ C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\refint\ApiLaye
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.pdb
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ApiLayer.genruntimeconfig.cache
 C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\ref\ApiLayer.dll
+C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\bin\Debug\net8.0\ApiLayer.staticwebassets.endpoints.json
+C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets\msbuild.ApiLayer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\LENOVO\source\repos\GlobalMart\ApiLayer\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

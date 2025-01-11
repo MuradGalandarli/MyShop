@@ -55,9 +55,7 @@ namespace ApiLayer
             options.UseSqlServer(builder.Configuration.GetConnectionString("MsSqlConnection")));
 
             builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
-            //builder.Services.AddFluentValidation(typeof(Program).Assembly);
-
-
+          
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
                 .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
@@ -69,7 +67,7 @@ namespace ApiLayer
 
             builder.Services.AddScoped<ApplicationContext>();
             builder.Services.AddTransient<IAuthService, AuthManager>();
-            builder.Services.AddScoped<IEmailService,EmailManager>();
+            builder.Services.AddScoped<IEmailService, EmailManager>();
             builder.Services.AddScoped<ICategory, EFCategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryManager>();
             builder.Services.AddScoped<ICommentService, CommentManager>();
@@ -99,7 +97,7 @@ namespace ApiLayer
 
             builder.Services.AddScoped<IValidator<ContactDto>, ContactValidation>();
             builder.Services.AddScoped<IValidator<AboutDto>, AboutValidation>();
-            builder.Services.AddScoped<IValidator<CategoryDto>,CategoryValidator>();
+            builder.Services.AddScoped<IValidator<CategoryDto>, CategoryValidator>();
             builder.Services.AddScoped<IValidator<CommentDto>, CommentValidator>();
             builder.Services.AddScoped<IValidator<FavoriteProductDto>, FavoriteProductValidator>();
             builder.Services.AddScoped<IValidator<FeedbackScoreDto>, FeedbackScoreValidator>();
@@ -112,39 +110,10 @@ namespace ApiLayer
 
 
             // For Identity  
-            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                             .AddEntityFrameworkStores<ApplicationContext>()
                             .AddDefaultTokenProviders();
 
-
-
-            // Adding Authentication  
-            /* builder.Services.AddAuthentication(options =>
-             {
-                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-             })
-
-                         // Adding Jwt Bearer  
-                         .AddJwtBearer(options =>
-                         {
-                             options.SaveToken = true;
-                             options.RequireHttpsMetadata = false;
-                             options.TokenValidationParameters = new TokenValidationParameters()
-                             {
-                                 ValidateIssuer = true,
-                                 ValidateAudience = true,
-                                 ValidAudience = builder.Configuration["JWT:ValidAudience"],
-                                 ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
-                                 ClockSkew = TimeSpan.Zero,
-                                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
-                             };
-                         });
-
-
-
- */
 
             builder.Services.AddAuthentication(options =>
             {
@@ -155,14 +124,14 @@ namespace ApiLayer
 .AddJwtBearer(options =>
 {
     options.SaveToken = true;
-    options.RequireHttpsMetadata = false; // HTTPS istifadə etməyəcəksinizsə (development üçün yaxşıdır)
+    options.RequireHttpsMetadata = false;
     options.TokenValidationParameters = new TokenValidationParameters()
     {
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidAudience = builder.Configuration["JWT:ValidAudience"],
         ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
-        ClockSkew = TimeSpan.Zero, // Token vaxtı səhvini sıfırlamaq
+        ClockSkew = TimeSpan.Zero, 
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
     };
 });
@@ -193,8 +162,7 @@ namespace ApiLayer
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-           // app.UseCors("AllowAll");
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

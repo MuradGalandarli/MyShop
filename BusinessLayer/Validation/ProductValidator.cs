@@ -16,6 +16,7 @@ namespace BusinessLayer.Validation
             RuleFor(x => x.ProductName).NotEmpty().NotNull();
             RuleFor(x => x.CategoryId).NotEmpty().NotNull();
             RuleFor(x => x.TotalCount).NotEmpty().NotNull();
+            RuleFor(x => x.ImageUI).NotEmpty().NotNull();
             
         }
     }

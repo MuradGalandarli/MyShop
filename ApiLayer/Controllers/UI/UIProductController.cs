@@ -37,7 +37,7 @@ namespace ApiLayer.Controllers.UI
             return data != null ? Ok(data) : BadRequest();
         }
 
-        [HttpGet("GetByProductUI/{id}")]
+     /*   [HttpGet("GetByProductUI/{id}")]
         public async Task<IActionResult> GetIdProduct(int id)
         {
             var result = await _product.GetById(id);
@@ -49,7 +49,7 @@ namespace ApiLayer.Controllers.UI
             };
             var data = JsonSerializer.Serialize(mapProduct, options);
             return data != null ? Ok(data) : BadRequest();
-        }
+        }*/
 
         [HttpPost("SearchProductUI")]
         public async Task<IActionResult> SearchProduct(SearchProductModel product)

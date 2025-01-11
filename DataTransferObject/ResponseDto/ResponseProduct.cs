@@ -28,7 +28,7 @@ namespace DataTransferObject.ResponseDto
         //public List<FavoriteProduct>? favoriteProducts { get; set; }
         //public List<FeedbackScore>? feedbackScores { get; set; }
         //public List<Order>? Orders { get; set; }
-        public List<ProductImage>? ProductImage { get; set; }
+        // public List<ProductImage>? ProductImage { get; set; }
         //public List<Trend>? Trend { get; set; }
     }
 }

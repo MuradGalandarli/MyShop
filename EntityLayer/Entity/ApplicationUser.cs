@@ -10,5 +10,6 @@ namespace EntityLayer.Entity
     public class ApplicationUser: IdentityUser
     {
         public User? User { get; set; }
+        public string? Name { get; set; }
     }
 }

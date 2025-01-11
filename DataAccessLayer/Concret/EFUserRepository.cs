@@ -15,10 +15,10 @@ namespace DataAccessLayer.Concret
     public class EFUserRepository : IUserApp
     {
         private readonly ApplicationContext _context;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<EFUserRepository> _logger;
         public EFUserRepository(ApplicationContext context,
-            UserManager<IdentityUser> userManager,
+            UserManager<ApplicationUser> userManager,
             ILogger<EFUserRepository> logger)
         {
             _context = context;

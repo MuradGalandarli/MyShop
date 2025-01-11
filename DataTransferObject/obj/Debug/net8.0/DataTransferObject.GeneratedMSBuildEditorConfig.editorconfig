@@ -11,3 +11,5 @@ build_property.RootNamespace = DataTransferObject
 build_property.ProjectDir = C:\Users\LENOVO\source\repos\GlobalMart\DataTransferObject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

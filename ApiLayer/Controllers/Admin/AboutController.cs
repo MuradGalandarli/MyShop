@@ -61,11 +61,13 @@ namespace ApiLayer.Controllers.Admin
         [HttpPost("AddAbout")]
         public async Task<IActionResult> AddAbout([FromForm] AboutDto t)
         {
+            
             var validationResult = await _validator.ValidateAsync(t);
             if (validationResult.IsValid)
             {
+              var code =  Response.StatusCode; 
                 var convertAbout = _mapper.Map<About>(t);
-                bool IsSuccess = await _aboutService.Add(convertAbout);
+                bool IsSuccess = await _aboutService.Add(convertAbout);  
                 return (IsSuccess ? Ok(IsSuccess) : BadRequest(IsSuccess));
             }
             return BadRequest();

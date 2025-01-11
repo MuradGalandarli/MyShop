@@ -19,11 +19,11 @@ namespace DataTransferObject.DtoEntity
         public string? Brand { get; set; }
 
         // [NotMapped]
-        //   public List<string>? ImageUrlUI { get; set; }
-        [NotMapped]
+        // public List<string>? ImageUrlUI { get; set; }
+        // [NotMapped]
         public List<IFormFile>? ImageUI { get; set; }
-        //     public bool IsActive { get; set; } = true;
-        //   public Category? Category { get; set; }
+        // public bool IsActive { get; set; } = true;
+        // public Category? Category { get; set; }
         public int CategoryId { get; set; }
         //  public List<Comment>? Comments { get; set; }
         // public List<FavoriteProduct>? favoriteProducts { get; set; }
